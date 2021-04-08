@@ -1,4 +1,4 @@
-<h3> Quick responsive landing page for a mobile app built using html, css/sass & js. </h3>
+<h3> Quick responsive landing page for a mobile app built using html, css/sass and js. </h3>
 
 <p align="center">
   <img src="screenshot.PNG" width="1080" title="website screenshot" >
