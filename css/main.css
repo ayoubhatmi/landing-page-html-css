@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --primary-color: #1a1a1a;
+  --main-text-color: #ffffff;
+  --light-color: #f2f2f2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--main-text-color);
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.navbar {
+  background: var(--primary-color);
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--main-text-color);
+  font-size: 1.2em;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: var(--primary-color);
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav ul.primary-nav a {
+  color: var(--main-text-color);
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.main-section .desc-txt {
+  width: 500px;
+  max-width: 70%;
+  margin-top: 5rem;
+}
+
+.main-section .desc-txt h1 {
+  font-size: 2.75rem;
+  font-family: "Montserrat";
+}
+
+.main-section .desc-txt p {
+  font-size: 1.5rem;
+}
+
+.main-section .desc-txt img {
+  width: 50%;
+  max-width: 200px;
+  margin-bottom: 2rem;
+}
+
+.main-section .desc-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: mainAnimation 3s forwards 0s ease;
+          animation: mainAnimation 3s forwards 0s ease;
+  margin-top: 2rem;
+}
+
+.review-section {
+  background-color: var(--primary-color);
+  padding: 2rem;
+}
+
+.review-section h2 {
+  text-align: center;
+  color: var(--main-text-color);
+  font-weight: 400;
+}
+
+.review-section .review-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.review-section .review-container .review-card {
+  color: var(--primary-color);
+  width: 300px;
+  background-color: var(--main-text-color);
+  margin: 2rem;
+  border-radius: 0.5em;
+  padding: 1rem;
+  text-align: center;
+}
+
+.review-section .review-container .review-card img {
+  width: 50%;
+}
+
+.review-section .review-container .review-card h6 {
+  font-size: 0.75rem;
+  margin-top: 0rem;
+}
+
+.screenshot-section {
+  padding: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+  background-color: var(--light-color);
+}
+
+.screenshot-section span {
+  font-weight: bold;
+}
+
+.screenshot-section p {
+  font-size: 2.5rem;
+}
+
+.screenshot-section .screenshot-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.screenshot-section .screenshot-container .screenshot-card .screen1 {
+  width: 66%;
+}
+
+.screenshot-section .screenshot-container .screenshot-card img {
+  width: 70%;
+}
+
+.screenshot-section .screenshot-container .screenshot-card h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: -0.5em;
+}
+
+.screenshot-section .screenshot-container .screenshot-card p {
+  font-size: 0.75rem;
+}
+
+.video-section {
+  background-color: var(--main-text-color);
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-section {
+  background-color: var(--primary-color);
+  color: var(--main-text-color);
+  padding: 2rem;
+}
+
+.form-section .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-section .contact-container form {
+  width: 400px;
+  min-width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-section .contact-container form input {
+  border-radius: 5em;
+  height: 35px;
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+
+.form-section .contact-container form textarea {
+  border-radius: 1em;
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+
+.form-section .contact-container form .send-btn {
+  background-color: var(--primary-color);
+  border: 3px solid var(--main-text-color);
+  border-radius: 5em;
+  color: var(--main-text-color);
+  height: 35px;
+  font-weight: 600;
+  margin-top: 1em;
+}
+
+.form-section .contact-container form .send-btn:hover {
+  background-color: var(--main-text-color);
+  color: var(--primary-color);
+}
+
+.form-section .contact-container .form-div {
+  margin: 3rem;
+}
+
+.form-section .contact-container .info-div {
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.form-section .contact-container .info-div .follow img {
+  width: 20%;
+  margin-right: 1rem;
+}
+
+.form-section .contact-container .info-div .play-store {
+  width: 70%;
+  max-width: 200px;
+}
+
+.form-section h2 {
+  text-align: center;
+  font-weight: 400;
+}
+
+footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 1em;
+  color: var(--main-text-color);
+  font-size: 0.75em;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+@-webkit-keyframes mainAnimation {
+  0% {
+    -webkit-transform: rotate(0) translateY(-60);
+            transform: rotate(0) translateY(-60);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateY(0);
+            transform: rotate(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes mainAnimation {
+  0% {
+    -webkit-transform: rotate(0) translateY(-60);
+            transform: rotate(0) translateY(-60);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) translateY(0);
+            transform: rotate(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.go-premium-cta a {
+    color: white;
+    border: 3px solid white;
+    font-weight: light;
+    border-radius: 5em;
+    margin-top: -0.2em;
+  }
+  .navbar nav li.go-premium-cta a:hover {
+    background: white;
+    color: var(--primary-color);
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
